@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="pb-4">
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        <a href="" class="navbar-brand">DevHub</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="" class="nav-link disabled">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar-text">Plain Text</div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <!--Collapse Navbar below MD screen size-->
+      <div class="container">
+        <a href="" class="navbar-brand">DevHub</a>
+        <button
+          class="navbar-toggler"
+          aria-controls="nav"
+          aria-label="Expand Navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <div class="navbar-toggler-icon"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-auto">
+            <!--Use mx-auto to center nav-items and ml-auto to push to right -->
+            <li class="nav-item">
+              <a href="" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link disabled">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="navbar-text">Plain Text</div> -->
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-auto">
+          <!--Minimus width required for the content.-->
+          <div class="box">Content</div>
+        </div>
+        <div class="col-8">
+          <!--Reserves 8th portion of the width-->
+          <div class="box">Content</div>
+        </div>
+        <div class="col">
+          <!--Takes minimum divided portion but upto required to fit the content-->
+          <div class="box">C</div>
+        </div>
+        <div class="col-1">
+          <!--Reserves fix portion of width even if content is longer, content overflows.-->
+          <div class="box">Content</div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4">
+          <div class="box"></div>
+        </div>
+        <div class="col-4 offset-4">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row mt-4 row-cols-2 g-2">
+        <!--Each row must have two cols only. Extra cols moves to next line in same manner.-->
+        <div class="col">
+          <div class="box"></div>
+        </div>
+        <div class="col">
+          <div class="box"></div>
+        </div>
+        <div class="col">
+          <div class="box"></div>
+        </div>
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <form action="">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          value="example@example.com"
+          name=""
+          id="email"
+          class="form-control form-control-sm"
+        />
+        <input type="color" class="form-control-color" name="" id="" />
+        <input type="range" name="" id="" class="form-control-range" />
+        <input type="range" name="" id="" class="form-range" />
+        <select name="" id="" class="form-select">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <button class="btn btn-primary mt-4">Button</button>
+      </form>
+    </div>
+    <div class="container mt-4 mb-4">
+      <form action="" class="form-check">
+        <input type="checkbox" name="" class="form-check-input" id="status" />
+        <label for="status" class="form-label">Active</label>
+      </form>
+      <form action="" class="form-check form-switch">
+        <input type="checkbox" name="" class="form-check-input" id="status2" />
+        <label for="status2" class="form-label">Active</label>
+      </form>
+      <form action="" class="form-check form-check-inline">
+        <input type="checkbox" name="" class="form-check-input" id="status" />
+        <label for="status" class="form-label">Active</label>
+      </form>
+      <form action="" class="form-check form-switch form-check-inline">
+        <input type="checkbox" name="" class="form-check-input" id="status2" />
+        <label for="status2" class="form-label">Active</label>
+      </form>
+    </div>
+
+    <div class="container mt-4">
+      <form action="">
+        <div class="input-group input-group-md">
+          <div class="input-group-text">$</div>
+          <input type="number" name="" id="" class="form-control" />
+          <button class="btn btn-warning">+</button>
+        </div>
+      </form>
+    </div>
+    <div class="container mt-4">
+      <form action="">
+        <div class="form-floating mb-3">
+          <input type="email" id="email2" class="form-control" />
+          <label for="email2">Email</label>
+          <div class="invalid-feedback">Invalid Email</div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container mt-4">
+      <div class="btn-group">
+        <button class="btn btn-outline-primary">Button</button>
+        <button class="btn btn-outline-primary ms-2" data-bs-toggle="button">
+          Button
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal"
+      >
+        Open Modal
+      </button>
+      <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="content">Header</div>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-target="#modal"
+              ></button>
+            </div>
+            <div class="modal-body">Body</div>
+            <div class="modal-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <button
+        class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#modal2"
+      >
+        Open Centered Modal
+      </button>
+      <div class="modal fade" id="modal2">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="content">Header</div>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-target="#modal"
+              ></button>
+            </div>
+            <div class="modal-body">Body</div>
+            <div class="modal-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <button
+        class="btn btn-warning"
+        data-bs-toggle="modal"
+        data-bs-target="#modal3"
+      >
+        Open Scrollable Modal
+      </button>
+      <div class="modal fade" id="modal3">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="content">Header</div>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-target="#modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+              similique, accusamus fugit tenetur perferendis consectetur animi
+              cum voluptate est, asperiores quibusdam sit odio voluptatibus
+              pariatur quasi laudantium id libero nemo aliquam illo officiis?
+              Incidunt eius aliquam facilis. Porro, exercitationem culpa. Veniam
+              temporibus voluptatum excepturi corporis quibusdam! Porro, eos. Ad
+              tenetur minima fugit qui dolorum, unde, perspiciatis alias
+              necessitatibus modi dolores cumque atque nulla corrupti voluptate,
+              eum exercitationem. Quos natus sapiente facilis molestiae?
+              Incidunt unde, iure laboriosam neque explicabo necessitatibus ea
+              pariatur animi vitae minus aliquid sit facilis odio similique nam
+              recusandae illum aspernatur velit deleniti sequi itaque. Quibusdam
+              maxime aliquid sapiente quisquam doloremque ad officiis incidunt
+              dolores voluptatem sunt vitae, eius enim repellendus. Quam
+              eligendi corrupti, quia placeat tenetur neque vitae cumque maxime,
+              dolorum inventore saepe, atque rem deleniti praesentium reiciendis
+              incidunt. Quae libero asperiores, explicabo, aperiam officiis enim
+              corrupti ducimus nam assumenda sint maiores non minima possimus
+              magnam in omnis veritatis distinctio eum hic ex aliquid qui. Amet
+              incidunt, fuga, suscipit recusandae quos consectetur corporis
+              vitae, fugiat possimus beatae nisi minima quasi aperiam quas ea
+              veniam delectus dolor accusamus ducimus sunt quia ab
+              exercitationem repellendus! Quod reprehenderit neque, minima
+              soluta cupiditate officia ea veritatis adipisci laborum tenetur
+              culpa sequi.
+            </div>
+            <div class="modal-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <button
+        class="btn btn-danger"
+        data-bs-toggle="collapse"
+        data-bs-target="#row"
+        aria-expanded="true"
+        aria-controls="row"
+      >
+        Toggle
+      </button>
+      <div class="row collapse" id="row">
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row show" id="row">
+        <div class="col">
+          <div class="box box-green"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <button
+        class="btn btn-success d-block mb-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#row1"
+        aria-expanded="true"
+        aria-controls="row"
+      >
+        Show
+      </button>
+      <div class="row collapse" id="row1">
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <button
+        class="btn btn-warning mt-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#row2"
+        aria-expanded="true"
+        aria-controls="row"
+      >
+        Collapse
+      </button>
+
+      <div class="row show mt-4" id="row2">
+        <div class="col">
+          <div class="box box-green"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="card bg-dark text-light">
+        <div class="card-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+          inventore quae, architecto expedita voluptas tenetur quaerat pariatur.
+          Cumque, inventore deleniti?
+        </div>
+      </div>
+      <div
+        class="card bg-primary text-white opacity-50"
+        style="--bs-bg-opacity: 0.5"
+      >
+        <div class="card-body">
+          <a href="" class="link-danger">Hi</a>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+          inventore quae, architecto expedita voluptas tenetur quaerat pariatur.
+          Cumque, inventore deleniti?
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <h1>Stacks Vertical/Horizontal</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="hstack gap-3">
+            <div class="bg-light border">First item</div>
+            <div class="bg-light border">Second item</div>
+            <div class="bg-light border">Third item</div>
+          </div>
+          <div class="vstack gap-3">
+            <div class="bg-light border">First item</div>
+            <div class="bg-light border">Second item</div>
+            <div class="bg-light border">Third item</div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-4 border-warning rounded-pill">
+        <div class="card-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni.
+        </div>
+      </div>
+      <div class="border-start border-5 border-success">
+        <div class="card-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni.
+        </div>
+      </div>
+    </div>
+    <h1>Display</h1>
+    <div class="container mt-4">
+      <div class="d-none d-lg-block">
+        <!--Only visible on lg or greater screen-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        dicta quod delectus aliquid, error ducimus totam eos dolor quaerat
+        cumque.
+      </div>
+    </div>
+
+    <h1>Flexbox</h1>
+    <div class="container mt-4">
+      <div class="d-flex">
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+      </div>
+      <div class="d-flex justify-content-around">
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+        <div class="box" style="width: 100px;"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
